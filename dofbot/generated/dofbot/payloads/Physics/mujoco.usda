@@ -1,0 +1,362 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    defaultPrim = "dofbot_urdf"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpktnag_id/dofbot_urdf.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_dofbot_e5mwbzeq/usdex_dofbot/dofbot_urdf.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_dofbot_e5mwbzeq/temp_dofbot/dofbot.usd
+
+
+Generated from Composed Stage of root layer /home/natu/dofbot/generated/dofbot/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    subLayers = [
+        @./physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "dofbot_urdf"
+{
+    over "Physics"
+    {
+        def MjcActuator "arm1_Joint_actuator"
+        {
+            uniform double mjc:forceRange:max = 10
+            uniform double mjc:forceRange:min = -10
+            custom rel mjc:target
+            prepend rel mjc:target = </dofbot_urdf/Physics/arm1_Joint>
+        }
+
+        def MjcActuator "arm2_Joint_actuator"
+        {
+            uniform double mjc:forceRange:max = 10
+            uniform double mjc:forceRange:min = -10
+            custom rel mjc:target
+            prepend rel mjc:target = </dofbot_urdf/Physics/arm2_Joint>
+        }
+
+        def MjcActuator "arm3_Joint_actuator"
+        {
+            uniform double mjc:forceRange:max = 10
+            uniform double mjc:forceRange:min = -10
+            custom rel mjc:target
+            prepend rel mjc:target = </dofbot_urdf/Physics/arm3_Joint>
+        }
+
+        def MjcActuator "arm4_Joint_actuator"
+        {
+            uniform double mjc:forceRange:max = 10
+            uniform double mjc:forceRange:min = -10
+            custom rel mjc:target
+            prepend rel mjc:target = </dofbot_urdf/Physics/arm4_Joint>
+        }
+
+        def MjcActuator "arm5_Joint_actuator"
+        {
+            uniform double mjc:forceRange:max = 10
+            uniform double mjc:forceRange:min = -10
+            custom rel mjc:target
+            prepend rel mjc:target = </dofbot_urdf/Physics/arm5_Joint>
+        }
+
+        def MjcActuator "Rlink1_Joint_actuator"
+        {
+            uniform double mjc:forceRange:max = 10
+            uniform double mjc:forceRange:min = -10
+            custom rel mjc:target
+            prepend rel mjc:target = </dofbot_urdf/Physics/Rlink1_Joint>
+        }
+
+        def MjcActuator "Rlink2_Joint_actuator"
+        {
+            uniform double mjc:forceRange:max = 10
+            uniform double mjc:forceRange:min = -10
+            custom rel mjc:target
+            prepend rel mjc:target = </dofbot_urdf/Physics/Rlink2_Joint>
+        }
+
+        def MjcActuator "Llink1_Joint_actuator"
+        {
+            uniform double mjc:forceRange:max = 10
+            uniform double mjc:forceRange:min = -10
+            custom rel mjc:target
+            prepend rel mjc:target = </dofbot_urdf/Physics/Llink1_Joint>
+        }
+
+        def MjcActuator "Llink2_Joint_actuator"
+        {
+            uniform double mjc:forceRange:max = 10
+            uniform double mjc:forceRange:min = -10
+            custom rel mjc:target
+            prepend rel mjc:target = </dofbot_urdf/Physics/Llink2_Joint>
+        }
+
+        def MjcActuator "Rlink3_Joint_actuator"
+        {
+            uniform double mjc:forceRange:max = 10
+            uniform double mjc:forceRange:min = -10
+            custom rel mjc:target
+            prepend rel mjc:target = </dofbot_urdf/Physics/Rlink3_Joint>
+        }
+
+        def MjcActuator "Llink3_Joint_actuator"
+        {
+            uniform double mjc:forceRange:max = 10
+            uniform double mjc:forceRange:min = -10
+            custom rel mjc:target
+            prepend rel mjc:target = </dofbot_urdf/Physics/Llink3_Joint>
+        }
+
+        over "root_joint"
+        {
+        }
+
+        over "arm1_Joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "arm2_Joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "arm3_Joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "arm4_Joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "arm5_Joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "Rlink1_Joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "Rlink2_Joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "Llink1_Joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "Llink2_Joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "Rlink3_Joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "Llink3_Joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "Camera_Joint"
+        {
+        }
+
+        over "Gripping_Joint"
+        {
+        }
+    }
+
+    over "Geometry"
+    {
+        over "base_link"
+        {
+            over "arm1_Link"
+            {
+                over "arm2_Link"
+                {
+                    over "arm3_Link"
+                    {
+                        over "arm4_Link"
+                        {
+                            over "arm5_Link"
+                            {
+                                over "Rlink1_Link"
+                                {
+                                    over "Rlink2_Link"
+                                    {
+                                        over "Rlink2_Link"
+                                        {
+                                        }
+
+                                        over "Rlink2_Link_1"
+                                        {
+                                        }
+                                    }
+
+                                    over "Rlink1_Link"
+                                    {
+                                    }
+
+                                    over "Rlink1_Link_1"
+                                    {
+                                    }
+                                }
+
+                                over "Llink1_Link"
+                                {
+                                    over "Llink2_Link"
+                                    {
+                                        over "Llink2_Link"
+                                        {
+                                        }
+
+                                        over "Llink2_Link_1"
+                                        {
+                                        }
+                                    }
+
+                                    over "Llink1_Link"
+                                    {
+                                    }
+
+                                    over "Llink1_Link_1"
+                                    {
+                                    }
+                                }
+
+                                over "Rlink3_Link"
+                                {
+                                    over "Rlink3_Link"
+                                    {
+                                    }
+
+                                    over "Rlink3_Link_1"
+                                    {
+                                    }
+                                }
+
+                                over "Llink3_Link"
+                                {
+                                    over "Llink3_Link"
+                                    {
+                                    }
+
+                                    over "Llink3_Link_1"
+                                    {
+                                    }
+                                }
+
+                                over "Gripping_point_Link"
+                                {
+                                    over "Gripping_Link"
+                                    {
+                                    }
+
+                                    over "Gripping_Link_1"
+                                    {
+                                    }
+                                }
+
+                                over "arm5_Link"
+                                {
+                                }
+
+                                over "arm5_Link_1"
+                                {
+                                }
+                            }
+
+                            over "Camera_Link"
+                            {
+                                over "Camera_Link"
+                                {
+                                }
+
+                                over "Camera_Link_1"
+                                {
+                                }
+                            }
+
+                            over "arm4_Link"
+                            {
+                            }
+
+                            over "arm4_Link_1"
+                            {
+                            }
+                        }
+
+                        over "arm3_Link"
+                        {
+                        }
+
+                        over "arm3_Link_1"
+                        {
+                        }
+                    }
+
+                    over "arm2_Link"
+                    {
+                    }
+
+                    over "arm2_Link_1"
+                    {
+                    }
+                }
+
+                over "arm1_Link"
+                {
+                }
+
+                over "arm1_Link_1"
+                {
+                }
+            }
+
+            over "base_link"
+            {
+            }
+
+            over "base_link_1"
+            {
+            }
+        }
+    }
+
+    over "Materials"
+    {
+    }
+
+    over "VisualMaterials"
+    {
+    }
+}
+

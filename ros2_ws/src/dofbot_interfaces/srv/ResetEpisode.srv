@@ -1,0 +1,16 @@
+uint8 MODE_RANDOM=0
+uint8 MODE_SPECIFIED=1
+
+uint8 mode
+float64 x
+float64 y
+int64 seed
+bool record
+---
+bool accepted
+uint32 episode_id
+int64 seed_used
+float64 cube_x
+float64 cube_y
+float64 cube_z
+string message

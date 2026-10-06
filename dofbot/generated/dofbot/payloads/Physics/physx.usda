@@ -1,0 +1,108 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    defaultPrim = "dofbot_urdf"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpktnag_id/dofbot_urdf.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_dofbot_e5mwbzeq/usdex_dofbot/dofbot_urdf.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_dofbot_e5mwbzeq/temp_dofbot/dofbot.usd
+
+
+Generated from Composed Stage of root layer /home/natu/dofbot/generated/dofbot/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    subLayers = [
+        @./physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "dofbot_urdf"
+{
+    over "Physics"
+    {
+        over "arm1_Joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57295.78
+        }
+
+        over "arm2_Joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57295.78
+        }
+
+        over "arm3_Joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57295.78
+        }
+
+        over "arm4_Joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57295.78
+        }
+
+        over "arm5_Joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57295.78
+        }
+
+        over "Rlink1_Joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57295.78
+        }
+
+        over "Rlink2_Joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57295.78
+        }
+
+        over "Llink1_Joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57295.78
+        }
+
+        over "Llink2_Joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57295.78
+        }
+
+        over "Rlink3_Joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57295.78
+        }
+
+        over "Llink3_Joint" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            float physxJoint:maxJointVelocity = 57295.78
+        }
+    }
+}
+

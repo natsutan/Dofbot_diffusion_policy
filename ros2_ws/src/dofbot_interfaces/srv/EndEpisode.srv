@@ -1,0 +1,9 @@
+bool truncated
+string reason
+---
+bool accepted
+bool success
+uint32 episode_id
+uint32 recorded_steps
+string dataset_path
+string message
